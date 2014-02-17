@@ -29,7 +29,7 @@
 
 BUILDDIR = ../../..
 JAVAC_MAX_WARNINGS = true
-JAVAC_WARNINGS_FATAL = true
+#JAVAC_WARNINGS_FATAL = true
 JAVAC_LINT_OPTIONS = -Xlint:all,-deprecation
 PACKAGE = sun.rmi
 PRODUCT = sun
