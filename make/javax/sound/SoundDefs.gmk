@@ -78,6 +78,10 @@ else
     CPPFLAGS += -DX_ARCH=X_AMD64
   endif # ARCH amd64
 
+  ifeq ($(ARCH), aarch64)
+    CPPFLAGS += -DX_ARCH=X_AARCH64
+  endif # ARCH amd64
+
   ifeq ($(ARCH), arm)
     CPPFLAGS += -DX_ARCH=X_ARM
   endif # ARCH arm
