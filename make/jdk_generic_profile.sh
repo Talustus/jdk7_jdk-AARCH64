@@ -267,7 +267,7 @@ if [ "${ZERO_BUILD}" = true ] ; then
     i386|ppc|s390|sparc|arm)
       ARCH_DATA_MODEL=32
       ;;
-    amd64|ppc64|s390x|sparcv9|ia64|alpha)
+    amd64|ppc64|s390x|sparcv9|ia64|alpha|aarch64)
       ARCH_DATA_MODEL=64
       ;;
     *)
@@ -278,7 +278,7 @@ if [ "${ZERO_BUILD}" = true ] ; then
 
   # ZERO_ENDIANNESS is the endianness of the processor
   case "${ZERO_LIBARCH}" in
-    i386|amd64|ia64)
+    i386|amd64|ia64|aarch64)
       ZERO_ENDIANNESS=little
       ;;
     ppc*|s390*|sparc*|alpha)
